@@ -1,4 +1,4 @@
 11月28日突然想利用python开发一个投资系统。
 起名为:Data decision compound interest system:DDCIS又称数据决策复利系统。
 写下了他的思维导图，大致有那些模块和实现那些功能。
-
+2020年11月30日2020年11月30日
