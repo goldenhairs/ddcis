@@ -1,8 +1,0 @@
-1、在表stock_data.basic_stock_new中查询行业为“互联网”的股票代码显示：
-select symbol from stock_data.basic_stock_new where industry="互联网";
-2、用1查到的代码去查询debtpayin_data表中的currentratio,quickratio,cashratio字段
-select currentratio,quickratio,cashratio from stock_data.debtpayin_data  where `code` in (select symbol from stock_data.basic_stock_new where industry="互联网")
-3、在表stock_data.basic_stock_new中查询股票的分类(去掉重复的选项):
-select distinct industry from stock_data.basic_stock_new 
-4、把3查到的数据导出为csv
-select distinct industry into outfile 'd:/excel_tushare/2.csv' from stock_data.basic_stock_new
