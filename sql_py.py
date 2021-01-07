@@ -1,3 +1,6 @@
+'''
+这个模块是从数据库中提取净值及7日年化收益率，为后面作图比较做准备。
+'''
 import MySQLdb,sys
 import pandas as pd
 import datetime as dt
@@ -24,7 +27,7 @@ def cx_db_fund(date=default_format_date):
     conn.close()
     return df
 
-#从本地数据库读取货币基金数据
+#从本地数据库读取货币基金历史数据
 def cx_fund_his(fund_code):
     fund_code=fund_code
     #asq.down_ak_m_fund_his(fund_code)

@@ -1,3 +1,6 @@
+'''
+这个模块是从akshare取货币基金排名及历史净值、实时数据存储到数据库
+'''
 import akshare as ak 
 from sqlalchemy import create_engine
 import datetime as dt
