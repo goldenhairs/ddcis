@@ -27,13 +27,11 @@ def down_ak_m_fund_daily():
 #定义主函数
 def main():
     #down_ak_m_fund_his('000533')
-    #print(down_ak_m_fund_daily())
+    #down_ak_m_fund_rank(date=default_format_date)
     pass
 
 
 if __name__=="__main__":
-    main()
+    pass
 else:
-    down_ak_m_fund_rank(date=default_format_date)
-    print("当日货币基金排行函数被调用！")
-
+    print("当日货币基金排行函数或货基下载历史数据函数被调用！")   

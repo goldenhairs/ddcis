@@ -26,6 +26,8 @@ def cx_db_fund(date=default_format_date):
 
 #从本地数据库读取货币基金数据
 def cx_fund_his(fund_code):
+    fund_code=fund_code
+    #asq.down_ak_m_fund_his(fund_code)
     try:
         conn=MySQLdb.connect(host='localhost',user='root',passwd='123456',db='akshare_db',charset='utf8')
     except Exception as e:
